@@ -25,7 +25,7 @@ _Estimated Time:_
 
   ![HeatWave in a Nutshell](./images/HeatWave-diagram-intro2.png "HeatWave in a Nutshell")
 
-##### HeatWave GenAI
+#### HeatWave GenAI
 
 Take advantage of generative AI without AI expertise or data movement. HeatWave GenAI provides integrated and automated generative AI with in-database large language models (LLMs); an automated, in-database vector store; and the ability to have contextual conversations in natural language.
 
