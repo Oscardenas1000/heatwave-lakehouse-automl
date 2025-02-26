@@ -367,10 +367,12 @@ In this lab, you will be guided through the following tasks:
     ![HeatWave create state](./images/mysql-heatwave-creating1.png "mysql heatwave creating ")
 
 28. The state 'Active' indicates that the DB System is ready for use
-    ![HeatWave create complete](./images/mysql-heatwave-active.png"mysql heatwave active ")
 
-23. On **heatwave-db** Page,select the **Connections** tab, check and save the Endpoint (Private IP Address). Later, you will need this value to connect to the Heatwave DB using the MySQL Shell client tool.
-    ![HeatWave create complete connection](./images/mysql-heatwave-connection-tab.png"mysql heatwave connection ")
+    ![HeatWave create complete](./images/mysql-heatwave-active1.png"mysql heatwave active ")
+
+29. On **heatwave-db** Page,select the **Connections** tab, check and save the Endpoint (Private IP Address). Later, you will need this value to connect to the Heatwave DB using the MySQL Shell client tool.
+
+    ![HeatWave create complete connection](./images/mysql-heatwave-connection-tab1.png"mysql heatwave connection ")
 You may now **proceed to the next lab**
 
 ## Acknowledgements
@@ -378,4 +380,4 @@ You may now **proceed to the next lab**
 - **Author** - Perside Foster, MySQL Solution Engineering
 
 - **Contributors** - Abhinav Agarwal, Senior Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, May 2025
+- **Last Updated By/Date** - Oscar Cárdenas, MySQL Solution Engineering, March 2025
