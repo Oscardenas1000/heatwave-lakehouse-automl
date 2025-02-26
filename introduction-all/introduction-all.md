@@ -19,12 +19,23 @@ _Estimated Time:_
 
 #### HeatWave One Database for OLTP, OLAP, AutoML, Lakehouse & Generative AI
 
-  ![lakehouse diagram](./images/HeatWave-diagram-intro1.png "HeatWave Lakehouse")
+  ![HeatWave diagram](./images/HeatWave-diagram-intro1.png "HeatWave diagram")
 
-#### HeatWave Lakehouse in a Nutshell
+#### Data Processing with HeatWave
 
-  ![Lakehouse in a Nutshell](./images/mysql-heatwave-intro-nutshell.png "Lakehouse in a Nutshell")
+  ![HeatWave in a Nutshell](./images/HeatWave-diagram-intro2.png "HeatWave in a Nutshell")
 
+  ##### HeatWave GenAI
+  Take advantage of generative AI without AI expertise or data movement. HeatWave GenAI provides integrated and automated generative AI with in-database large language models (LLMs); an automated, in-database vector store; and the ability to have contextual conversations in natural language.
+
+  ##### HeatWave MySQL
+  Accelerate MySQL query performance by orders of magnitude and get real-time analytics on your transactional data—without the complexity, latency, risks, and cost of ETL duplication. Rely on the only cloud service built on MySQL Enterprise Edition.
+
+  ##### HeatWave Lakehouse
+  Query data in various formats in object storage and optionally combine it with transactional data in MySQL databases. HeatWave Lakehouse delivers unmatched performance and price-performance.
+
+  ##### HeatWave AutoML
+  Automate the pipeline to build, train, and explain ML models using data in object storage and MySQL Database—without moving the data to a separate ML cloud service and at no additional cost.
 
 ### Objectives
 
