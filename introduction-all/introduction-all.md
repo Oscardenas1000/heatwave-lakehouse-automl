@@ -2,11 +2,11 @@
 
 ## About this Workshop
 
-MySQL HeatWave is a fully managed database service powered by the HeatWave in-memory query accelerator. It’s the only cloud service that combines transactions, real-time analytics across data warehouses and data lakes, machine learning, and lakehouse in one MySQL Database—without the complexity, latency, risks, and cost of ETL duplication. It’s available on OCI, AWS, and Azure.
+ HeatWave is a fully managed database service powered by the HeatWave in-memory query accelerator. It’s the only cloud service that combines transactions, real-time analytics across data warehouses and data lakes, machine learning, and lakehouse in one MySQL Database—without the complexity, latency, risks, and cost of ETL duplication. It’s available on OCI, AWS, and Azure.
 
-In this workshop, you will learn how to create a MySQL HeatWave Cluster, connect to the cluster using MySQL Shell, run queries on HeatWave, create a machine learning model on lakehouse, and create LAMP applications.
+In this workshop, you will learn how to create a HeatWave Cluster, connect to the cluster using MySQL Shell, run queries on HeatWave, create a machine learning model on lakehouse, create applications using the LAMP stack, as well as visualize data analytics through Oracle Analytics Cloud (OAC).
 
-Overall this workshop will show you how easy it is to create and manage MySQL HeatWave and how MySQL HeatWave enables you to make informed business-critical decisions with real-time insights.
+Overall this workshop will show you how easy it is to create and manage HeatWave and how HeatWave enables you to make informed business-critical decisions with real-time insights.
 
 _Estimated Time:_ 
   
@@ -15,13 +15,13 @@ _Estimated Time:_
 
 ### About Product/Technology
 
-MySQL HeatWave is a massively parallel, high performance, in-memory query accelerator for Oracle MySQL Database Service that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. It is the only service that enables customers to run OLTP and OLAP workloads directly from their MySQL database without the need of ETL process. MySQL Autopilot uses advanced machine-learning techniques to automates the database lifecycle operations including provisioning, data loading, query processing, and error handling. This minimizes manual administrative work and further improves HeatWave’s usability, performance, and scalability. MySQL HeatWave is also integrated with other Oracle Cloud services such as Data Integration Service and Oracle Analytics Cloud to provide a seamless end-to-end integration.
+ HeatWave is a massively parallel, high performance, in-memory query accelerator for Oracle MySQL Database Service that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. It is the only service that enables customers to run OLTP and OLAP workloads directly from their MySQL database without the need of ETL process. MySQL Autopilot uses advanced machine-learning techniques to automates the database lifecycle operations including provisioning, data loading, query processing, and error handling. This minimizes manual administrative work and further improves HeatWave’s usability, performance, and scalability. HeatWave is also integrated with other Oracle Cloud services such as Data Integration Service and Oracle Analytics Cloud to provide a seamless end-to-end integration.
 
-#### MySQL HeatWave One Database for OLTP, OLAP, AutoML & Lakehouse 
+#### HeatWave One Database for OLTP, OLAP, AutoML & Lakehouse 
 
-  ![lakehouse diagram](./images/mysql-heatwave-intro-2.png "MySQL HeatWave Lakehouse")
+  ![lakehouse diagram](./images/mysql-heatwave-intro-2.png "HeatWave Lakehouse")
 
-#### MySQL HeatWave Lakehouse in a Nutshell
+#### HeatWave Lakehouse in a Nutshell
 
   ![Lakehouse in a Nutshell](./images/mysql-heatwave-intro-nutshell.png "Lakehouse in a Nutshell")
 
