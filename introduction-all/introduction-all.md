@@ -8,8 +8,8 @@ In this workshop, you will learn how to create a HeatWave Cluster, connect to th
 
 Overall this workshop will show you how easy it is to create and manage HeatWave and how HeatWave enables you to make informed business-critical decisions with real-time insights.
 
-_Estimated Time:_ 
-  
+_Estimated Time:_
+
 - Labs 1 through 5  : 1 hour
 - Labs 1 through 18 : 4 hours
 
@@ -71,7 +71,7 @@ In this lab, you will be guided through the following steps:
 ### Prerequisites
 
 - An Oracle Free Tier, Paid or LiveLabs Cloud Account
-- Some Experience with MySQL Shell - [MySQL Site](https://dev.MySQL.com/doc/MySQL-shell/8.0/en/).
+- Some Experience with MySQL Shell - [MySQL Site](https://dev.mysql.com/doc/mysql-shell/9.2/en/).
 
 You may now **proceed to the next lab**
 
