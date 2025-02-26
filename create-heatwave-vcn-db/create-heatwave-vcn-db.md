@@ -180,7 +180,7 @@ In this lab, you will be guided through the following tasks:
 1. Go to Navigation Menu -> Databases -> HeatWave MySQL -> DB Systems
     ![HeatWave menu](./images/mysql-menu1.png "mysql menu")
 
-2. Click 'Create HeatWave DB System'
+2. Click 'Create DB System'
     ![HeatWave template](./images/mysql-create1.png "mysql create ")
 
 3. Select the Development or Testing Option
@@ -258,7 +258,7 @@ In this lab, you will be guided through the following tasks:
 
     ![HeatWave hardware selection](./images/mysql-configure-hardware3.png "mysql hardware ")
 
-13. Lastly, specify **2** for the Nodes and enable **HeatWave LakeHouse** by click on the radio button. Then, click **Save Changes**.
+13. Lastly, specify **2** for the Nodes and enable **HeatWave LakeHouse** by clicking on the radio button. Then, click **Save Changes**.
 
     ![HeatWave hardware selection](./images/mysql-configure-hardware4.png "mysql hardware ")
 
@@ -284,17 +284,17 @@ In this lab, you will be guided through the following tasks:
 
 16. **Optionaly**, provide an email under _Contact email_ to recieve updates and info on this particular service
 
-17. Click on Show Advanced Options
+17. Click on **Show Advanced Options**
 
-18. Go to the Deletion Plan tab, and toggle all the options
+18. Go to the **Deletion Plan** tab, and toggle all the options
 
     ![HeatWave Deletion Plan config](./images/mysql-deletionPlan.png "mysql Deletion Plan ")
 
-19. Go to the Configuration tab, and select the latest innovation release version
+19. Go to the **Configuration tab**, and select the latest innovation release version
 
     ![HeatWave Version config](./images/mysql-version.png "mysql version config")
 
-20. Go to the Connections tab, in the Hostname field enter  (same as DB System Name):
+20. Go to the **Connections tab**, in the Hostname field enter  (same as DB System Name):
 
     ```bash
     <copy>heatwave-db</copy> 
@@ -349,7 +349,7 @@ In this lab, you will be guided through the following tasks:
      ```
     </details>
 
-24. If your OCI Region is not listed in step 16, don't worry, You will be able to load the DB Data in Lab 4 Task 1. Please skip to step 26.
+24. If your OCI Region is not listed in step 23, don't worry, You will be able to load the DB Data in Lab 4 Task 1. Please skip to step 26.
 
 25. The Data Import Link entry should look like this:
 
