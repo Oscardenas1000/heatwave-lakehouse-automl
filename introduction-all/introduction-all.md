@@ -15,11 +15,11 @@ _Estimated Time:_
 
 ### About Product/Technology
 
- HeatWave is a massively parallel, high performance, in-memory query accelerator for Oracle MySQL Database Service that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. It is the only service that enables customers to run OLTP and OLAP workloads directly from their MySQL database without the need of ETL process. MySQL Autopilot uses advanced machine-learning techniques to automates the database lifecycle operations including provisioning, data loading, query processing, and error handling. This minimizes manual administrative work and further improves HeatWave’s usability, performance, and scalability. HeatWave is also integrated with other Oracle Cloud services such as Data Integration Service and Oracle Analytics Cloud to provide a seamless end-to-end integration.
+ HeatWave is the only fully managed MySQL database service that seamlessly integrates transactions, analytics, machine learning, and Generative AI without the need for ETL duplication. As a massively parallel, high-performance, in-memory query accelerator, HeatWave significantly enhances MySQL performance for analytics and mixed workloads, enabling customers to run both OLTP and OLAP workloads directly within their MySQL database. It also includes HeatWave Lakehouse, allowing users to query data stored in object storage across various file formats. MySQL Autopilot further optimizes the database lifecycle by leveraging advanced machine learning to automate provisioning, data loading, query processing, and error handling—reducing administrative effort while enhancing performance and scalability. Additionally, HeatWave integrates with Oracle Cloud services such as Data Integration Service and Oracle Analytics Cloud, providing a seamless end-to-end data management and analytics experience.
 
-#### HeatWave One Database for OLTP, OLAP, AutoML & Lakehouse 
+#### HeatWave One Database for OLTP, OLAP, AutoML, Lakehouse & Generative AI
 
-  ![lakehouse diagram](./images/mysql-heatwave-intro-2.png "HeatWave Lakehouse")
+  ![lakehouse diagram](./images/HeatWave-diagram-intro1.png "HeatWave Lakehouse")
 
 #### HeatWave Lakehouse in a Nutshell
 
