@@ -1,6 +1,6 @@
 {
-  "workshoptitle": "Heatwave-All: Build MySQL HeatWave OLTP, OLAP,  AUTOML with Lakehouse, OAC, and APEX",
-    "help": "livelabs-help-oci_us@oracle.com",
+  "workshoptitle": "HeatWave Hands-On-Lab: One Database Service for OLTP, OLAP, AutoML, LakeHouse, and GenAI",
+    "help": "oscar.cardenas@oracle.com",
     "tutorials": [
         {
             "title": "Introduction",
