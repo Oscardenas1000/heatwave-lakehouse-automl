@@ -116,29 +116,46 @@ group by `o`.`ORDER_ID`,`o`.`ORDER_DATETIME`,`o`.`ORDER_STATUS`,`c`.`CUSTOMER_ID
     ```
     **Note** It takes a while to execute
 
-## Task 2: Add a HeatWave Cluster to heatwave-db MySQL Database System
+## Task 2: Offload relational data to the HeatWave Cluster
 
-1. Go to Navigation Menu
-    Databases
-        MySQL
+1. Go to Navigation Menu -> Databases -> HeatWave MySQL
 
 2. Click the `heatwave-db` Database System link
 
     ![Database List](./images/db-list.png "Database List")
 
-3. In the list of DB Systems, click the **heatwave-db** system. click **More Action ->  Add HeatWave Cluster**.
-    ![Databse Detail](./images/mysql-heatwave-more.png "mysql heatwave more")
+3. In the list of DB Systems, click the **heatwave-db** system. click **More Action ->  Edit HeatWave Cluster**.
+    ![Databse Detail](./images/mysql-heatwave-more1.png "mysql heatwave more")
 
 4. Enable the **MySQL HeatWave LakeHouse** checkbox
 
-5. Set **Node Count to 2** for this Lab Click **Add HeatWave Cluster** to create the HeatWave cluster
+5. Set **Node Count to 2** for this Lab Click **Estimate Node** to begin a full scan of the data within the DB System
 
-    ![Activate Lakehouse](./images/mysql-add-heatwave-cluster.png "mysql add heatwave cluster")
+    ![Activate Lakehouse](./images/mysql-edit-heatwave-cluster.png "mysql add heatwave cluster")
 
-6. HeatWave creation will take about 10 minutes. From the DB display page scroll down to the Resources section.
+6. Click the **Generate Estimate** button to begin a full scan of the data within the DB System
 
-7. Click the **HeatWave** link. Your completed HeatWave Cluster Information section will look like this:
-    ![Completed Cluster Creation](./images/mysql-heat-cluster-complete.png "mysql heat cluster complete ")
+    ![Activate Lakehouse](./images/mysql-heatwave-cluster-estimate.png "mysql add heatwave cluster")
+
+    - The full scan may take a couple of minutes
+
+7. Once the full scan is completed, select all the schemas availabe
+
+    - Click on the **Show load command** link, this will display a procedure command
+
+    ```bash
+    <copy>CALL sys.heatwave_load(JSON_ARRAY('mysql_customer_orders'), NULL);</copy>
+    ```
+
+    - Copy the generated procedure into a notepad for later use
+
+    - Click on the **Apply Estimated Node** button
+
+    ![Activate Lakehouse](./images/mysql-heatwave-cluster-estimate2.png "mysql add heatwave cluster")
+
+8. Set **Node Count to 2** if it changed after the node estimation process, then click on the **Save Changes** button
+
+    ![Activate Lakehouse](./images/mysql-heatwave-cluster-save-changes.png "mysql add heatwave cluster")
 
 You may now **proceed to the next lab**
 
@@ -146,5 +163,5 @@ You may now **proceed to the next lab**
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 
-- **Contributors** - Abhinav Agarwal, Senior Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, May 2023
+- **Contributors** - Abhinav Agarwal, Senior Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Oscar Cárdenas, MySQL Solution Engineering
+- **Last Updated By/Date** - Oscar Cárdenas, MySQL Solution Engineering, March 2023
