@@ -26,10 +26,10 @@
 
 
         {
-          "title": "Lab 3: Add HeatWave Cluster to the DB sytem",
-          "filename": "../../add-heatwave-cluster/add-heatwave-cluster.md"
+          "title": "Lab 3: Edit The HeatWave Cluster",
+          "filename": "../../edit-heatwave-cluster/edit-heatwave-cluster.md"
         },
-                
+
         {
           "title": "Lab 4: Load data into HeatWave Cluster ",
           "filename": "../../load-db-heatwave-cluster/load-db-heatwave-cluster.md"
