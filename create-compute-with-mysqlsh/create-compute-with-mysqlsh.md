@@ -1,8 +1,8 @@
-# Connect to MySQL HeatWave With Compute and Create and Load DBShema and  data
+# Connect to HeatWave With Compute and Create and Load DBSchema and data
 
 ## Introduction
 
-When working in the cloud, there are often times when your servers and services are not exposed to the public internet. MySQL HeatWave on OCI is an example of a service that is only accessible through private networks. Since the service is fully managed, we keep it siloed away from the internet to help protect your data from potential attacks and vulnerabilities. It’s a good practice to limit resource exposure as much as possible, but at some point, you’ll likely want to connect to those resources. That’s where Compute Instance, also known as a Bastion host, enters the picture. This Compute Instance Bastion Host is a resource that sits between the private resource and the endpoint which requires access to the private network and can act as a “jump box” to allow you to log in to the private resource through protocols like SSH.  This bastion host requires a Virtual Cloud Network and Compute Instance to connect with the MySQL DB Systems.
+When working in the cloud, there are often times when your servers and services are not exposed to the public internet. HeatWave on OCI is an example of a service that is only accessible through private networks. Since the service is fully managed, we keep it siloed away from the internet to help protect your data from potential attacks and vulnerabilities. It’s a good practice to limit resource exposure as much as possible, but at some point, you’ll likely want to connect to those resources. That’s where Compute Instance, also known as a Bastion host, enters the picture. This Compute Instance Bastion Host is a resource that sits between the private resource and the endpoint which requires access to the private network and can act as a “jump box” to allow you to log in to the private resource through protocols like SSH.  This bastion host requires a Virtual Cloud Network and Compute Instance to connect with the MySQL DB Systems.
 
 Today, you will use the Compute Instance to connect from the browser to a HeatWave DB System
 
@@ -14,8 +14,8 @@ In this lab, you will be guided through the following tasks:
 
 - Create SSH Key on OCI Cloud
 - Create Compute Instance
-- Setup Compute Instance with MySQL Shell
-- Connect to MySQL Heatwave System
+- Setup a Compute Instance with MySQL Shell
+- Connect to Heatwave DB System
 - Create and Load mysql\_customer\_orders Schema
 
 ### Prerequisites
@@ -30,7 +30,7 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
 1. To start the Oracle Cloud shell, go to your Cloud console and click the cloud shell icon at the top right of the page. This will open the Cloud Shell in the browser, the first time it takes some time to generate it.
 
-    ![Open Cloudshell](./images/cloudshellopen.png "cloudshellopen ")
+    ![Open Cloudshell](./images/cloudshellopen1.png "cloudshellopen ")
 
     ![Cloudshell Message](./images/cloudshell-welcome.png "cloudshell welcome ")
 
@@ -108,8 +108,8 @@ You will need a compute Instance to connect to your brand new MySQL database.
     Instances
     ![Compute Template](./images/compute-launch.png "compute launch ")
 
-2. On Instances in **lakehouse** Compartment, click  **Create Instance**
-    ![Create Compute button](./images/compute-create.png "compute create")
+2. On Instances in **heatwave** Compartment, click  **Create Instance**
+    ![Create Compute button](./images/compute-create1.png "compute create")
 
 3. On Create Compute Instance
 
@@ -119,41 +119,43 @@ You will need a compute Instance to connect to your brand new MySQL database.
     <copy>heatwave-client</copy>
     ```
 
-4. Make sure **lakehouse** compartment is selected
+4. Make sure **heatwave** compartment is selected
 
 5. On Placement, keep the selected Availability Domain
 
-6. Keep the selected Image, Oracle Linux 8
+6. Keep the selected Image, **Oracle Linux 8**, and selected shape, **AMD's VM.Standard.E4.Flex**
 
-    ![Use Linux OS](./images/compute-oracle-linux.png "compute oracle linux")  
+    ![Use Linux OS](./images/compute-oracle-linux1.png "compute oracle linux")
 
-7. Change the Instance Shape:
-    - Click **Change shape** button
-    - Click **Virtual Machine** box
-    - Click **Specialty and previous generation** box
-    - Click **VM.Standard.E2.2**
-    - Click the **Select Shape** button
+    - Click the **Next** button
 
-    ![New Shape](./images/compute-shape-select.png "compute shape select")
+7. On Security, leave the defaoult settings, then click the **Next** button
+
+    ![New Shape](./images/compute-security.png "compute shape select")
 
 8. On Networking, make sure '**heatwave-vcn**' is selected
 
     'Assign a public IP address' should be set to Yes
 
-    ![Select VCN](./images/compute-vcn.png "compute vcn.")
+    ![Select VCN](./images/compute-vcn1.png "compute vcn.")
 
 9. On Add SSH keys, paste the public key from the notepad.
-  
-    ![Add SSH key](./images/compute-id-rsa-paste.png "compute id rsa paste")
 
-10. Click '**Create**' to finish creating your Compute Instance.
+    ![Add SSH key](./images/compute-id-rsa-paste1.png "compute id rsa paste")
 
-11. The New Virtual Machine will be ready to use after a few minutes. The state will be shown as 'Provisioning' during the creation
-    ![Provision Compute](./images/compute-provisioning.png "compute provisioning")
+10. On Storage, keep the default settings
 
-12. The state 'Running' indicates that the Virtual Machine is ready to use.
+    ![Storage Settings](./images/compute-storage-settings.png "compute Storage Settings")
 
-    ![Completed Compute](./images/compute-running.png "compute running")
+    - Click the **Next** button
+
+11. On Review, Click '**Create**' to finish creating your Compute Instance.
+
+12. The New Virtual Machine will be ready to use after a few minutes. The state will be shown as 'Provisioning' during the creation
+
+13. The state 'Running' indicates that the Virtual Machine is ready to use.
+
+    ![Completed Compute](./images/compute-running1.png "compute running")
 
 ## Task 4: Connect to Compute and Install MySQl Shell
 
@@ -162,11 +164,11 @@ You will need a compute Instance to connect to your brand new MySQL database.
     - Go to Navigation Menu
             Compute
             Instances
-        ![Navigate to Compute ](./images/compute-list.png "compute list")
+        ![Navigate to Compute ](./images/compute-list1.png "compute list")
 
     - Click the `heatwave-cient` Instance link
 
-        ![Compute Instance List](./images/compute-running.png "compute public ip")
+        ![Compute Instance List](./images/compute-running1.png "compute public ip")
 
     - Copy the compute name `heatwave-cient`  and  the `Public IP Address` to the notepad
 
@@ -180,10 +182,11 @@ You will need a compute Instance to connect to your brand new MySQL database.
 
     - Click the `heatwave-db` Database System link
 
-        ![HeatWave create complete](./images/mysql-heatwave-active.png"mysql heatwave active ")
+        ![HeatWave create complete](./images/mysql-heatwave-active1.png"mysql heatwave active ")
 
     - Select the **Connections** tab, copy the database nane `heatwave-db`  and the `Private IP Address` to the notepad
-        ![HeatWave create complete connection](./images/mysql-heatwave-connection-tab.png"mysql heatwave connection ")
+        ![HeatWave create complete connection](./images/mysql-heatwave-connection-tab1.png"mysql heatwave connection ")
+
 3. Indicate the location of the private key you created earlier with **heatwave-client**.
 
     Enter the username **opc** and the Public **IP Address**.
@@ -216,5 +219,5 @@ You may now **proceed to the next lab**
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 
-- **Contributors** - Abhinav Agarwal, Senior Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, May 2023
+- **Contributors** - Abhinav Agarwal, Senior Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Oscar Cárdenas, MySQL Solution Engineering
+- **Last Updated By/Date** - Oscar Cárdenas, MySQL Solution Engineering, March 2025
